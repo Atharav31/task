@@ -19,28 +19,28 @@
                 <li><a href="#">Deals</a></li>
                 <li><a href="#">Categories</a></li>
                 <li><a href="#">Login</a></li>
+                <!-- Button to view cart -->
+                <li><button onclick="viewCart()">View Cart</button></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main Content -->
     <main>
-        
-
         <!-- Featured Products -->
         <section>
             <h1>Featured Products</h1>
-            <div class="product">
+            <div class="product" id="product1">
                 <img src="samsung.jpg" alt="Product 1">
                 <h3>SAMSUNG Galaxy S24 Ultra 5G</h3>
                 <p>SAMSUNG Galaxy S24 Ultra 5G (Titanium Violet, 256 GB)  (12 GB RAM)</p>
-                <button>Add to Cart</button>
+                <button onclick="addToCart('Samsung Galaxy S24 Ultra 5G', '₹59,999')">Add to Cart</button>
             </div>
-            <div class="product">
+            <div class="product" id="product2">
                 <img src="watch.jpg" alt="Product 2">
                 <h3>Boult Crown Smart Watch</h3>
                 <p>Boult Crown 1.95'' Screen, BT Calling, Working Crown, Zinc Alloy Frame, 900 Nits, SpO2 Smartwatch  (Orange Strap, Free Size)</p>
-                <button>Add to Cart</button>
+                <button onclick="addToCart('Boult Crown Smart Watch', '₹3,999')">Add to Cart</button>
             </div>
             <!-- Add more products here -->
         </section>
@@ -50,5 +50,8 @@
     <footer>
         <p>&copy; 2024 Flipkart. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
